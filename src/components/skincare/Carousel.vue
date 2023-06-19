@@ -84,4 +84,17 @@
         border-radius: 100%;
         background-size: 1.5rem;
     }
+
+    @media (min-width: 1500px) {
+        .carousel-item img {
+            height: auto;
+        }
+        .carousel-caption {
+            width: 500px;
+            left: 1100px;
+            bottom: 300px;
+            text-align: start;
+        }
+
+    }
 </style>

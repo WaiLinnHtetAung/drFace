@@ -120,4 +120,10 @@
         bottom: 0;
         right: 80px;
     }
+
+    @media (min-width: 1500px) {
+        .detail-btn {
+            right: 42%;
+        }
+    }
 </style>

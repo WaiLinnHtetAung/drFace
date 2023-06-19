@@ -118,6 +118,13 @@
     background: #ac8a17;
   }
 
+  @media (min-width: 1600px) {
+    .option-card {
+      width: 800px;
+      margin: 250px auto;
+    }
+  }
+
   
 </style>
 
