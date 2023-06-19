@@ -22,7 +22,7 @@
         background: rgb(22,184,187, .8);
         width: 900px;
         height: 300px;
-        margin: 70px auto 30px;
+        margin: 40px auto 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;

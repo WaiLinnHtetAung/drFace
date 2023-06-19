@@ -46,7 +46,7 @@
   }
   .row {
     position: relative;
-    box-shadow: 5px 5px 10px rgb(155, 153, 153);
+    /* box-shadow: 5px 5px 10px rgb(155, 153, 153); */
 
   }
 

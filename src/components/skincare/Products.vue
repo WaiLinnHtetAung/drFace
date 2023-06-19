@@ -51,6 +51,10 @@
                                 မျက်နှာသာမကပဲ တစ်ကိုယ်လုံးထွက်သမျှဝက်ခြံ တွေပေါ် အုံပေးနိုင်ပါသည်။
                             </div>
                         </div>
+                        <div class="btn-group mt-3 ms-4" role="group" aria-label="Basic outlined example">
+                            <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                            <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,6 +72,10 @@
                             <li>Vitamin E ကအသားအရေ ကိုနူးညံ့ချော့မွေ့စေတယ် </li>
                             <li>မနက်ရောညရောလိမ်းနိုင်ပါသည် </li>
                         </ul>
+                    </div>
+                    <div class="btn-group mt-2 ms-3" role="group" aria-label="Basic outlined example">
+                        <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                        <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
                     </div>
                     
                 </div>
@@ -112,7 +120,10 @@
                         </ul>
                         
                     </div>
-                    
+                    <div class="btn-group mt-2 ms-4" role="group" aria-label="Basic outlined example">
+                        <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                        <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,7 +142,7 @@
 <style scoped>
     .products {
         padding: 10px 12%;
-        margin: 80px 0 20px;
+        margin: 90px 0 20px;
     }
 
     .section-header {
@@ -164,7 +175,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        margin: 0 0 15px;
+        margin: 0 0 8px;
     }
 
     .header h5 {
@@ -185,25 +196,38 @@
     }
 
     .property {
-        margin: 0 0 1px 8px;
+        margin: 0 0 2px 8px;
     }
 
     .property div {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .product-row {
         margin-bottom: 90px;
     }
 
+    .product-row ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
     .text-3 ul li {
-        font-size: 15px;
-        margin-bottom: 8px;
+        font-size: 14px;
+        margin-bottom: 4px;
     }
 
     .text-3 p {
         color: #956107;
         font-weight: bold;
         margin-left: 15px;
+    }
+
+    .all-products {
+        margin-top: -20px !important;
+    }
+
+    .btn-group a {
+        font-size: 12px;
     }
 </style>

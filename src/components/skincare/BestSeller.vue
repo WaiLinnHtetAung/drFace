@@ -66,7 +66,7 @@
 
 <style scoped>
     .best-seller {
-        margin: 90px 0 20px;
+        margin: 70px 0 20px;
         padding: 0 9%;
     }
 
@@ -97,10 +97,11 @@
 
     .card-content i {
         color: goldenrod;
+        font-size: 14px;
     }
 
     .card-content h4 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         font-style: italic;
     }
