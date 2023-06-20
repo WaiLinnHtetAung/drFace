@@ -7,6 +7,7 @@
                 <p>This collection of medical-grade products helps banish blemishes and promote clearer skin.</p>
             </div>
         </div>
+        <div class="title">All Products</div>
         <div class="row products">
             <div class="col-lg-3 col-md-6 product-card mb-5" v-for="(product, index) in products" :key="index">
                 <div class="product-img" :style="product.bg">
@@ -72,10 +73,154 @@ import { onMounted, onUpdated } from 'vue';
                     price: "1000 Ks",
                     bg: "background-image: -webkit-linear-gradient(65deg, #93b9a2 50%, #d5e5d8 40%)"
                 },
+                {
+                    id: 6,
+                    img: require('@/assets/Products/05.glow-body-serum/img.png'),
+                    ingredients: ['Glutathtione', 'Naicinamide', 'Hyaluronic acid', 'Shea butter'],
+                    name: "Dr.face Glow Booster Body Serum ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #e4e4e4 50%, #efefef 40%)"
+                },
+                {
+                    id: 7,
+                    img: require('@/assets/Products/06.aha-serum/img.png'),
+                    ingredients: ['AHA', 'Shea Butter', 'Hyaluronic acid'],
+                    name: "Dr.face AHA Repair & Revive Body Serum ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #e9c16c 50%, #f9e5bc 40%)"
+                },
+                {
+                    id: 8,
+                    img: require('@/assets/Products/07.lip-balm/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Lip Balm ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #b4ca5a 50%, #ccde80 40%)"
+                },
+                {
+                    id: 9,
+                    img: require('@/assets/Products/08.sun-essence/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Sun Essence SPF 50PA++++",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d1bd56 50%, #e0d282 40%)"
+                },
+                {
+                    id: 10,
+                    img: require('@/assets/Products/09.pore-toner/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Pore Minimizer Clarifying  Toner ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #cb6914 50%, #ea8833 40%)"
+                },
+                {
+                    id: 11,
+                    img: require('@/assets/Products/10.vitamin-C/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Vitamin C serum ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d9d9d9 50%, #f0ecec 40%)"
+                },
+                {
+                    id: 12,
+                    img: require('@/assets/Products/11.aloe-gel/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Aloe Vera With Tea Tree Oil",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #82b88a 50%, #a9e9b3 40%)"
+                },
+                {
+                    id: 13,
+                    img: require('@/assets/Products/12.pink-egg/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Pink Egg",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d6aab6 50%, #e4c4cd 40%)"
+                },
+                {
+                    id: 14,
+                    img: require('@/assets/Products/13.eye-serum/img.png'),
+                    ingredients: ['Adenosine', 'Astaxanthin', 'Glutathtione', 'Niacinamide', 'Panthenol'],
+                    name: "Dr.face Advanced Repair Eye Serum",
+                    price: "1000 Ks",
+                    bg: 'background-image: -webkit-linear-gradient(65deg, #e5bb71 50%, #efcb8b 40%)',
+                },
+                {
+                    id: 15,
+                    img: require('@/assets/Products/14.anti-aging/img.png'),
+                    ingredients: ['Hyaluronic acid'],
+                    name: "Dr.face Anti-Aging Serum",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #f0b5c9 50%, #fdc7d9 40%)"
+                },
+                {
+                    id: 16,
+                    img: require('@/assets/Products/15.powder/img.png'),
+                    ingredients: ['oil'],
+                    name: "Dr.face Powder Foundation",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d1d1d3 50%, #eaeaec 40%)"
+                },
+                {
+                    id: 17,
+                    img: require('@/assets/Products/16.water-gel/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Skin Moisturizer Water Gel",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #56c0e2 50%, #6ecded 40%)"
+                },
+                {
+                    id: 18,
+                    img: require('@/assets/Products/17.treatment-toner/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Treatment Toning Lotion ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #c9c8c8 50%, #ecedef 40%)"
+                },
+                {
+                    id: 19,
+                    img: require('@/assets/Products/18.remover/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Tea Tree Make Up Remover Cleansing Wipes ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #c79d14 50%, #d7bb5e 40%)"
+                },
+                {
+                    id: 20,
+                    img: require('@/assets/Products/19.t-zone/img.png'),
+                    ingredients: [],
+                    name: "Dr.face Tzone pack ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d29da2 50%, #fbdcde 40%)"
+                },
+                {
+                    id: 21,
+                    img: require('@/assets/Products/20.v-mask/img.png'),
+                    ingredients: ['PPC', 'Collagen', 'Caffeine', 'Vitamin-C', 'Gingko biloba leaf extract', 'Pumpkin fruit extract'],
+                    name: "Dr.face V Shape Mask",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #b8447a 50%, #d997b6 40%)"
+                },
+                {
+                    id: 22,
+                    img: require('@/assets/Products/21.skin-care-mask/img.png'),
+                    ingredients: ['CICA Tea Tree Leaf extract', 'Panthenol', 'allantoin', 'Hyaluronic Acid'],
+                    name: "Dr.face all in one skin care mask ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #6f8750 50%, #a5c876 40%)"
+                },
+                {
+                    id: 23,
+                    img: require('@/assets/Products/22.spot-gel/img.png'),
+                    ingredients: ['Salicylic Acid', 'Moisturizer', 'Centella extract', 'Niacinamide'],
+                    name: "Dr.face spot clear gel",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #196892 50%, #7dbee2 40%)"
+                },
             ];
 
             onMounted(() => {
-                window.scrollTo(0,0)
+                // window.scrollTo(0,0)
             })
 
             return {products}
@@ -98,7 +243,7 @@ import { onMounted, onUpdated } from 'vue';
     .top-img .text {
         position: absolute;
         bottom: 30%;
-        left: 80px;
+        left: 150px;
         width: 500px;
     }
 
@@ -115,24 +260,33 @@ import { onMounted, onUpdated } from 'vue';
     .product-card {
         position: relative;
         height: 370px;
+    }
 
+    .title {
+        width: 86%;
+        padding: 10px 20px;
+        border: none;
+        margin: 0 auto 15px;
+        background: #e3e0e0;
+        border-radius: 7px;
+        font-size: 18px;
     }
 
     .products {
-        padding: 20px 5%;
+        padding: 20px 7%;
     }
 
     .product-img {
         width: 100%;
-        height: 130px;
+        height: 140px;
         text-align: center;
         padding: 0;
         margin: 0;
-        background-image: -webkit-linear-gradient(65deg, #93b9a2 50%, #d5e5d8 40%)
+        background-image: -webkit-linear-gradient(65deg, #196892 50%, #7dbee2 40%)
     }
 
     .products img {
-        width: 50%;
+        width: 60%;
         object-fit: cover;
         height: 100%;
     }
