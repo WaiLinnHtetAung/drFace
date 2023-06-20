@@ -8,41 +8,73 @@
             </div>
         </div>
         <div class="row products">
-            <div class="col-lg-3 col-md-6 product-card">
-                <div class="product-img">
-                    <img src="../../assets/Products/01.all-in-one/img1.png" alt="">
+            <div class="col-lg-3 col-md-6 product-card mb-5" v-for="(product, index) in products" :key="index">
+                <div class="product-img" :style="product.bg">
+                    <img :src="product.img" alt="">
                 </div>
-                <div class="ingredients">
-                    <span>Lauric Acid</span>
-                    <span>Vitamin A & E</span>
-                    <span>Antioxidants</span>
+                <div class="ingredients" >
+                    <span v-for="(item, index) in product.ingredients" :key="index">{{ item }}</span>
                 </div>
-                <h2>Dr.face all in one facial cleanser</h2>
+                <h2>{{product.name}}</h2>
                 <div class="rating">
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
+                    <p><i class="fa-solid fa-money-bill-1-wave me-2"></i>{{product.price}}</p>
+                    <div class="detail"><router-link to="#">See Detail</router-link></div>
                 </div>
-                <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
-                <router-link to="#">See Detail</router-link>
             </div>
-            <div class="col-lg-3 col-md-6">
-
-            </div>
-            <div class="col-lg-3 col-md-6">
-
-            </div>
-            <div class="col-lg-3 col-md-6">
-
-            </div>
-            <div class="col-lg-3 col-md-6">
-                
-            </div>
+            
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        
+        setup() {
+            let products = [
+                {
+                    id: 1,
+                    img: require('@/assets/Products/01.all-in-one/img1.png'),
+                    ingredients: ['Lauric Acid', 'Vitamin A & E', 'Antioxidants'],
+                    name: "Dr.face all in one facial cleanser ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #d5a5ad 50%, #e1bbc2 40%);"
+                },
+                {
+                    id: 2,
+                    img: require('@/assets/Products/01.all-in-one/img2.png'),
+                    ingredients: ['Lauric Acid', 'Vitamin A & E', 'Antioxidants'],
+                    name: "Dr.face all in one facial cleanser ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #4987e6 50%, #85b1f3 40%)"
+                },
+                {
+                    id: 3,
+                    img: require('@/assets/Products/02.gluta/img.png'),
+                    ingredients: ['Glutathione', 'Vitamin – C', 'Collagen Peptide', 'CoQ10'],
+                    name: "The Beauty Doctor (Gluta Glow Dietary Supplement)",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #f2b1b7 50%, #f2bdb9 40%)"
+                },
+                {
+                    id: 4,
+                    img: require('@/assets/Products/03.byebye/img.png'),
+                    ingredients: ['Salicylic acid', 'Calamine', 'Sulfur'],
+                    name: "Dr.face Bye Bye Blemishes Solution Drying Lotion",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #ed677f 50%, #e78a9b 40%)"
+                },
+                {
+                    id: 5,
+                    img: require('@/assets/Products/04.acne-back-spray/img.png'),
+                    ingredients: ['Salicylic acid', 'Zinc', 'Vitamin E', 'Chamomile extract'],
+                    name: "Dr.Face Body Acne Spray ",
+                    price: "1000 Ks",
+                    bg: "background-image: -webkit-linear-gradient(65deg, #93b9a2 50%, #d5e5d8 40%)"
+                },
+            ];
+
+            return {products}
+        }
     }
 </script>
 
@@ -68,11 +100,17 @@
     .text h3 {
         font-size: 33px;
         font-weight: bold;
-        font-family: fantasy;
+        font-style: italic;
     }
     .text p {
         font-size: 14px;
         margin-top: 20px;
+    }
+
+    .product-card {
+        position: relative;
+        height: 460px;
+
     }
 
     .products {
@@ -83,9 +121,9 @@
         width: 100%;
         height: 200px;
         text-align: center;
-        background: rgb(223, 222, 222);
         padding: 0;
         margin: 0;
+        background-image: -webkit-linear-gradient(65deg, #93b9a2 50%, #d5e5d8 40%)
     }
 
     .products img {
@@ -106,5 +144,48 @@
         padding: 1px 10px 1px;
         font-size: 11px;
         border-radius: 10px;
+    }
+
+    .product-card h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        margin: 20px auto;
+    }
+
+    .rating {
+        text-align: center;
+    }
+
+    .rating .fa-star {
+        color: #f2ca2f ;
+    }
+
+    .rating p i {
+        color: green;
+    }
+
+    .rating p {
+        margin: 12px auto 10px;
+        font-weight: bold;
+    }
+    .detail {
+        background-color: #eee;
+        width: 93%;
+        padding: 20px auto;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: -webkit-linear-gradient(65deg, #747171 25%, #e2c164 20%);
+        position: absolute;
+        bottom: 0;
+    }
+    .rating a {
+        text-decoration: none;
+        color: #423e3e;
+        font-weight: bold;
+        font-size: 18px;
     }
 </style>
