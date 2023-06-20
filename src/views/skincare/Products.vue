@@ -19,8 +19,8 @@
                 <div class="rating">
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave me-2"></i>{{product.price}}</p>
-                    <div class="detail"><router-link to="#">See Detail</router-link></div>
                 </div>
+                <div class="detail"><router-link to="#">See Detail</router-link></div>
             </div>
             
         </div>
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import { onMounted, onUpdated } from 'vue';
     export default {
         setup() {
             let products = [
@@ -73,6 +74,10 @@
                 },
             ];
 
+            onMounted(() => {
+                window.scrollTo(0,0)
+            })
+
             return {products}
         }
     }
@@ -109,7 +114,7 @@
 
     .product-card {
         position: relative;
-        height: 460px;
+        height: 370px;
 
     }
 
@@ -119,7 +124,7 @@
 
     .product-img {
         width: 100%;
-        height: 200px;
+        height: 130px;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -127,7 +132,7 @@
     }
 
     .products img {
-        width: 70%;
+        width: 50%;
         object-fit: cover;
         height: 100%;
     }
@@ -138,20 +143,22 @@
         gap: 4px;
         justify-content: center;
         margin: 20px auto 10px;
+        padding: 0 5px;
     }
     .ingredients span {
         border: 1px solid rgb(73, 63, 63);
-        padding: 1px 10px 1px;
-        font-size: 11px;
+        padding: 0px 10px;
+        font-size: 10px;
         border-radius: 10px;
     }
 
     .product-card h2 {
         text-align: center;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
         font-style: italic;
         margin: 20px auto;
+        padding: 0 20px;
     }
 
     .rating {
@@ -159,7 +166,7 @@
     }
 
     .rating .fa-star {
-        color: #f2ca2f ;
+        color: #e2c164 ;
     }
 
     .rating p i {
@@ -169,12 +176,13 @@
     .rating p {
         margin: 12px auto 10px;
         font-weight: bold;
+        font-size: 12px;
     }
     .detail {
         background-color: #eee;
         width: 93%;
         padding: 20px auto;
-        height: 40px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,10 +190,10 @@
         position: absolute;
         bottom: 0;
     }
-    .rating a {
+    .product-card a {
         text-decoration: none;
         color: #423e3e;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 12px;
     }
 </style>

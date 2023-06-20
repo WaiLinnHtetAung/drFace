@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <div class="btn-group mt-3 ms-4" role="group" aria-label="Basic outlined example">
-                            <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                            <router-link to="/products" class="btn btn-sm btn-outline-primary">All</router-link>
                             <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         </ul>
                     </div>
                     <div class="btn-group mt-2 ms-3" role="group" aria-label="Basic outlined example">
-                        <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                        <router-link to="products" class="btn btn-sm btn-outline-primary">All</router-link>
                         <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
                     </div>
                     
@@ -121,14 +121,14 @@
                         
                     </div>
                     <div class="btn-group mt-2 ms-4" role="group" aria-label="Basic outlined example">
-                        <router-link to="#" class="btn btn-sm btn-outline-primary">All</router-link>
+                        <router-link to="/products" class="btn btn-sm btn-outline-primary">All</router-link>
                         <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
                     </div>
                 </div>
             </div>
         </div>
         <div class="all-products text-center">
-            <router-link to="#" class="dr-btn">See All Products <i class="fa-solid fa-arrow-right ms-2"></i></router-link>
+            <router-link to="/products" class="dr-btn">See All Products <i class="fa-solid fa-arrow-right ms-2"></i></router-link>
         </div>
     </div>
 </template>

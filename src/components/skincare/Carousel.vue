@@ -13,7 +13,7 @@
                         CARE
                     </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque distinctio eos atque quibusdam repellat vel sed quidem illo perferendis.</p>
-                    <button class="dr-btn">See All Products</button>
+                    <router-link to="/products" class="dr-btn">Shop Now</router-link>
                 </div>
             </div>
             <div class="carousel-item">
