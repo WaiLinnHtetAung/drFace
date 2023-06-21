@@ -53,7 +53,7 @@
                         </div>
                         <div class="btn-group mt-3 ms-4" role="group" aria-label="Basic outlined example">
                             <router-link to="/products" class="btn btn-sm btn-outline-primary">All</router-link>
-                            <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
+                            <router-link to="/product/4" class="btn btn-sm btn-outline-primary">Detail</router-link>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="btn-group mt-2 ms-3" role="group" aria-label="Basic outlined example">
                         <router-link to="products" class="btn btn-sm btn-outline-primary">All</router-link>
-                        <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
+                        <router-link to="/product/6" class="btn btn-sm btn-outline-primary">Detail</router-link>
                     </div>
                     
                 </div>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="btn-group mt-2 ms-4" role="group" aria-label="Basic outlined example">
                         <router-link to="/products" class="btn btn-sm btn-outline-primary">All</router-link>
-                        <router-link to="#" class="btn btn-sm btn-outline-primary">Detail</router-link>
+                        <router-link to="/product/14" class="btn btn-sm btn-outline-primary">Detail</router-link>
                     </div>
                 </div>
             </div>

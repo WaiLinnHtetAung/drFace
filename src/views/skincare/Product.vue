@@ -30,7 +30,7 @@
 </template>
 
 <script>
-    import { computed } from 'vue';
+    import { computed, onMounted } from 'vue';
     import { useStore } from 'vuex';
     export default {
         props: ['id'],
@@ -38,6 +38,10 @@
             let store = useStore();
             store.dispatch('getProduct', props.id);
             let product = computed(() => store.getters['getProduct'])
+
+            onMounted(() => {
+                window.scrollTo(0,0);
+            })
 
             return {product}
         }

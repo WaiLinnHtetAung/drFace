@@ -21,7 +21,7 @@
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave me-2"></i>{{product.price}}</p>
                 </div>
-                <div class="detail"><router-link :to="'/product/'+product.id">See Detail</router-link></div>
+                <div class="detail pointer" @click="detail(product.id)"><router-link :to="'/product/'+product.id">See Detail</router-link></div>
             </div>
             
         </div>
@@ -31,15 +31,20 @@
 <script>
     import { computed, onMounted, onUpdated } from 'vue';
     import {useStore} from 'vuex'
+    import { useRouter } from 'vue-router';
     export default {
         setup() {
+            let router = useRouter();
             let store = useStore();
             let products = computed(() => store.getters['getProducts']);
+
+            let detail = (id) => router.push(`/product/${id}`)
+
             onMounted(() => {
                 window.scrollTo(0,0)
             })
 
-            return {products}
+            return {products, detail}
         }
     }
 </script>

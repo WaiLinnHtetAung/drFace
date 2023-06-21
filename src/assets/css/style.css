@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bg-linear: linear-gradient(to right,rgba(218, 172, 33, 0.9), rgba(238, 183, 17, 0.9));
+    --bg-linear: linear-gradient(to right, rgba(218, 172, 33, 0.9), rgba(238, 183, 17, 0.9));
 }
 
 body {
@@ -47,7 +47,7 @@ body {
     align-items: center;
 }
 
-.section-header h2{
+.section-header h2 {
     font-weight: bold;
     font-size: 24px;
 }
@@ -56,4 +56,8 @@ body {
     height: 3px;
     background-color: #b38b12;
     width: 95px;
+}
+
+.pointer {
+    cursor: pointer;
 }
