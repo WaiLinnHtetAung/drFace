@@ -15,7 +15,7 @@
                     <h4>All in One</h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
-                    <router-link to="#" class="detail-btn">See Detail</router-link>
+                    <router-link to="/product/1" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 ">
@@ -27,7 +27,7 @@
                     <h4>Dr.Face Body Acne Spray</h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
-                    <router-link to="#" class="detail-btn">See Detail</router-link>
+                    <router-link to="/product/5" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 ">
@@ -39,7 +39,7 @@
                     <h4>Dr.face Pore Minimizer Clarifying  Toner </h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
-                    <router-link to="#" class="detail-btn">See Detail</router-link>
+                    <router-link to="/product/10" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 ">
@@ -51,7 +51,7 @@
                     <h4>Dr.face Anti-Aging Serum  </h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
                     <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
-                    <router-link to="#" class="detail-btn">See Detail</router-link>
+                    <router-link to="/product/15" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
         </div>
