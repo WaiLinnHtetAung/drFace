@@ -107,6 +107,7 @@ import { ref } from 'vue';
         margin-left: 10px;
         padding: 3px 20px;
     }
+    
 
     .navbar .nav-item a:hover {
         color: #c1930a;
