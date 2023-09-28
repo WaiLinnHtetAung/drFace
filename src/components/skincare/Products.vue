@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="row product-row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 order-lg-1 order-md-2 order-sm-2 order-2">
                 <div class="product-content">
                     <div class="header">
                         <div class="bar" style="border-left: 5px solid #7b7577;"></div>
@@ -80,7 +80,7 @@
                     
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 order-lg-2 order-md-1 order-sm-1 order-1">
                 <div class="photo-card" style=" background-image: -webkit-linear-gradient(65deg, #c3bfc0 50%, #e6e1e1 50%);">
                     <img src="@/assets/Products/05.glow-body-serum/img.png" alt="">
                     <span>Dr.Face</span>
@@ -152,7 +152,6 @@
     .photo-card {
         background-image: -webkit-linear-gradient(65deg, #c8a465 50%, #fff 50%);
         height: 250px;
-        padding: 20px;
         position: relative;
         text-align: center;
     }
@@ -165,9 +164,9 @@
         font-weight: bold;
     }
     .products .photo-card img {
-        width: 85%;
+        width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
     }
 
@@ -229,5 +228,28 @@
 
     .btn-group a {
         font-size: 12px;
+    }
+
+    @media (max-width: 1600px) {
+        .products {
+            padding: 10px 9%;
+            margin: 90px 0 20px;
+        }
+    }
+
+    @media (max-width: 990px) {
+
+        .products {
+            padding: 10px 6%;
+            margin: 90px 0 20px;
+        }
+        .photo-card {
+            margin-bottom: 30px;
+        }
+
+        .btn-group a {
+            font-size: 14px;
+            padding: 5px 20px;
+        }
     }
 </style>

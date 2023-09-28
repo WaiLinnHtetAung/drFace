@@ -8,7 +8,7 @@ export default createStore({
                 img: require('@/assets/Products/01.all-in-one/img1.png'),
                 ingredients: ['Lauric Acid', 'Vitamin A & E', 'Antioxidants'],
                 name: "Dr.face all in one facial cleanser ",
-                price: "1000 Ks",
+                price: "18500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d5a5ad 50%, #e1bbc2 40%);",
                 info: `
                 <ul>
@@ -17,14 +17,15 @@ export default createStore({
                   <li class="mb-2"> <span style="color: #da6972;">Antioxidants</span> မြောက်မြားစွာဖြင့်အရေပြားကိုကြည်လင်နူးညံ့စေပါသည်</li>
                   <li class="mb-2">ရောင်ရမ်းခြင်းများကိုကျစေပြီး ဝက်ခြံ အမာရွတ် အနာအဆာများကို ပြန်လည်ကုသပေးနိုင်သည်။</li>
               </ul>
-                `
+                `,
+                set: ['acne', 'anti-aging']
             },
             {
                 id: 2,
                 img: require('@/assets/Products/01.all-in-one/img2.png'),
                 ingredients: ['Lauric Acid', 'Vitamin A & E', 'Antioxidants'],
                 name: "Dr.face all in one facial cleanser ",
-                price: "1000 Ks",
+                price: "18500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #4987e6 50%, #85b1f3 40%)",
                 info: `
                 <ul>
@@ -33,14 +34,15 @@ export default createStore({
                   <li class="mb-2"> <span style="color: #da6972;">Antioxidants</span> မြောက်မြားစွာဖြင့်အရေပြားကိုကြည်လင်နူးညံ့စေပါသည်</li>
                   <li class="mb-2">ရောင်ရမ်းခြင်းများကိုကျစေပြီး ဝက်ခြံ အမာရွတ် အနာအဆာများကို ပြန်လည်ကုသပေးနိုင်သည်။</li>
               </ul>
-                `
+                `,
+                set: ['whitening', 'glow']
             },
             {
                 id: 3,
                 img: require('@/assets/Products/02.gluta/img.png'),
                 ingredients: ['Glutathione', 'Vitamin – C', 'Collagen Peptide', 'CoQ10'],
                 name: "The Beauty Doctor (Gluta Glow Dietary Supplement)",
-                price: "1000 Ks",
+                price: "57300 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #f2b1b7 50%, #f2bdb9 40%)",
                 info: `
                 <ul>
@@ -51,14 +53,15 @@ export default createStore({
                   <li class="mb-2">တစ်နေ့တစ်လုံးပုံမှန်သောက်သုံးပေးရုံဖြင့် ၃လအတွင်း သိသာစွာ အသားအရေ ဖြူဝင်းလာစေပါသည် ။</li>
                   <li class="mb-2">မှတ်ချက် ။   ။ ကိုယ်ဝန်ဆောင်နှင့်နို့တိုက်မိခင်များ၊သွေးတိုး ၊ဆီးချို၊နှလုံးရောဂါ၊ကျောက်ကပ်ရောဂါ (လက်ရှိ )ဖြစ်နေတဲ့သူများမသောက်သုံးသင့်ပါ။  ညစာစားပြီး ရေ (သို့မဟုတ်) သံပုရာရည် ဖြင့် သောက်သုံးနိုင်ပါသည် ။</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 4,
                 img: require('@/assets/Products/03.byebye/img.png'),
                 ingredients: ['Salicylic acid', 'Calamine', 'Sulfur'],
                 name: "Dr.face Bye Bye Blemishes Solution Drying Lotion",
-                price: "1000 Ks",
+                price: "19900 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #ed677f 50%, #e78a9b 40%)",
                 info: `
                 <ul>
@@ -69,14 +72,15 @@ export default createStore({
                   <li class="mb-2"> <span style="color: #da6972;">Sulfur</span> - အဆီပြန်ခြင်းကိုထိန်းချုပ်ပေးတယ်။</li>
                   <li class="mb-2">မျက်နှာသာမကပဲ တစ်ကိုယ်လုံးထွက်သမျှဝက်ခြံ တွေပေါ် အုံပေးနိုင်ပါသည်။ </li>
                 </ul>
-                `
+                `,
+                set: ['acne']
             },
             {
                 id: 5,
                 img: require('@/assets/Products/04.acne-back-spray/img.png'),
                 ingredients: ['Salicylic acid', 'Zinc', 'Vitamin E', 'Chamomile extract'],
                 name: "Dr.Face Body Acne Spray ",
-                price: "1000 Ks",
+                price: "23900 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #93b9a2 50%, #d5e5d8 40%)",
                 info: `
                 <ul>
@@ -85,7 +89,8 @@ export default createStore({
                   <li class="mb-2">ဝက်ခြံ ဖြစ်စေသော ဘတ်တီးရီးယား ပိုးများသေစေပြီး ရောင်ရမ်းခြင်းအမြန်ကျစေသည် ။ </li>
                   <li class="mb-2">ကျန်ခဲ့သောအမာရွတ်များကို မှေးမှိန်ပြီး အရှင်းပျောက်ကင်းစေသည်။ </li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 6,
@@ -100,7 +105,8 @@ export default createStore({
                 <li class="mb-2"><span style="color: #da6972;">Vitamin E</span>ကအသားအရေ ကိုနူးညံ့ချော့မွေ့စေတယ် ။ </li>
                 <li class="mb-2">မနက်ရောညရောလိမ်းနိုင်ပါသည် ။</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 7,
@@ -116,28 +122,30 @@ export default createStore({
                 <li class="mb-2">ကြာဆူးတွေ ခန္ဓာကိုယ် မှာ ဝက်ခြံ ဖြစ်ပြီး ကျန်ခဲ့တဲ့အမာရွတ် အမဲစက် တွေ ၊လက်မဲ၊ဂျိုင်းမဲ ၊ဒူးမဲ ၊ပေါင်မဲ နေတာတွေ အကုန်လုံးကိုကုသမပေးမယ့် <span style="color: #da6972;">Repair & Revive Body Serum</span></li>
                 <li class="mb-2">အသားအရေကို ပြုစုကုသပေးတဲ့ <span style="color: #da6972;">AHA</span> ပါဝင်တာမို့ ညဘက်လိမ်းပေးသင့်ပါတယ် နေ့ခင်းဘက်လိမ်းမယ်ဆိုရင် နေလောင်ကာ ပါလိမ်းပြီးမှ နေပူထဲထွက်သင့်ပါတယ်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 8,
                 img: require('@/assets/Products/07.lip-balm/img.png'),
                 ingredients: [],
                 name: "Dr.face Lip Balm ",
-                price: "1000 Ks",
+                price: "7850 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #b4ca5a 50%, #ccde80 40%)",
                 info: `
                 <ul>
                   <li class="mb-2"> နှုတ်ခမ်းသားခြောက်သွေ့အက်ကွဲခြင်း၊ညိုမဲနေသော နှုတ်ခမ်းများအတွက် အစိုဓာတ်ဖြည့်ပြီး နူးညံ့သော နှုတ်ခမ်းသားကို ရရှိစေသည့်လိမ်းဆေး ဖြစ်ပါသည်။</li>
                   
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 9,
                 img: require('@/assets/Products/08.sun-essence/img.png'),
                 ingredients: [],
                 name: "Dr.face Sun Essence SPF 50PA++++",
-                price: "1000 Ks",
+                price: "21000 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d1bd56 50%, #e0d282 40%)",
                 info: `
                 <ul>
@@ -145,14 +153,15 @@ export default createStore({
                   <li class="mb-2"> နေလောင်ကာ <span style="color: #da6972;">sunscreen </span> နှင့် <span style="color: #da6972;">essence </span>ကို ပေါင်းစပ်ထုတ်လုပ်ထားသည်။ </li>
                   <li class="mb-2">Japan နည်းပညာကို အသုံးပြုထားပါသည် </li>
                 </ul>
-                `
+                `,
+                set: ['whitening']
             },
             {
                 id: 10,
                 img: require('@/assets/Products/09.pore-toner/img.png'),
                 ingredients: [],
                 name: "Dr.face Pore Minimizer Clarifying  Toner ",
-                price: "1000 Ks",
+                price: "26500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #cb6914 50%, #ea8833 40%)",
                 info: `
                 <ul>
@@ -162,28 +171,30 @@ export default createStore({
                   <li class="mb-2">ချွေးပေါက်ကျဉ်းစေခြင်း</li>
                   <li class="mb-2">ဝက်ခြံ ရောင်ရမ်းကျစေသည့်အပြင် အစိုဓာတ် ကိုလည်း ထိန်းညှိပေးနိုင်သောတိုနာ ဖြစ်ပါသည် ။</li>
                 </ul>
-                `
+                `,
+                set: ['acne']
             },
             {
                 id: 11,
                 img: require('@/assets/Products/10.vitamin-C/img.png'),
                 ingredients: [],
                 name: "Dr.face Vitamin C serum ",
-                price: "1000 Ks",
+                price: "28000 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d9d9d9 50%, #f0ecec 40%)",
                 info: `
                 <ul>
                   <li class="mb-2">ဝက်ခြံ ၊ အမာရွတ် ၊ ချွေးပေါက်ကျယ်၊ အရေးအကြောင်းများအတွက် အထူးထုတ်လုပ်ထားသည့်လိမ်းဆေးဖြစ်ပါသည်။ </li>
                   <li class="mb-2"> သဘာဝနာနတ်သီး အဆီအနှစ်ဖြင့်ဖော်စပ်ထားပါသည် ။</li>
                 </ul>
-                `
+                `,
+                set: ['whitening']
             },
             {
                 id: 12,
                 img: require('@/assets/Products/11.aloe-gel/img.png'),
                 ingredients: [],
                 name: "Dr.face Aloe Vera With Tea Tree Oil",
-                price: "1000 Ks",
+                price: "11300 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #82b88a 50%, #a9e9b3 40%)",
                 info: `
                 <ul>
@@ -193,14 +204,15 @@ export default createStore({
                   <li class="mb-2">ဝက်ခြံကြောင့် ဖြစ်သော အမာရွတ် များနှင့် အရေပြားခြောက်သွေ့ခြင်းကို သက်သာ စေပါသည် </li>
                   <li class="mb-2">နေလောင်ထားသော အသားအရေကို အေးမြစေသည်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 13,
                 img: require('@/assets/Products/12.pink-egg/img.png'),
                 ingredients: [],
                 name: "Dr.face Pink Egg",
-                price: "1000 Ks",
+                price: "5200 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d6aab6 50%, #e4c4cd 40%)",
                 info: `
                 <ul>
@@ -209,14 +221,15 @@ export default createStore({
                   <li class="mb-2">အကောင်းဆုံးအနူးညံ့ဆုံး အထိအတွေ့နဲ့ နှစ်သက်စရာ ဥ</li>
                   <li class="mb-2">အလာဂျီ (ဓာတ်မတည့်မှု)လုံးဝမရှိသော နည်းပညာ အပြင် <span style="color: #da6972;">UV sterilization </span> ဖြင့် ပိုးသတ်ထားသော အလွန်သန့်ရှင်းသည့် ဥ များဖြစ်ပါသည်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 14,
                 img: require('@/assets/Products/13.eye-serum/img.png'),
                 ingredients: ['Adenosine', 'Astaxanthin', 'Glutathtione', 'Niacinamide', 'Panthenol'],
                 name: "Dr.face Advanced Repair Eye Serum",
-                price: "1000 Ks",
+                price: "26500 Ks",
                 bg: 'background-image: -webkit-linear-gradient(65deg, #e5bb71 50%, #efcb8b 40%)',
                 info: `
                 <ul>
@@ -226,14 +239,15 @@ export default createStore({
                   <li class="mb-2"><span style="color: #da6972;"> Panthenol (Vitamin B complex) </span> က အသားအရေကိုဖြူဖွေးနူးညံ့စေတယ်</li>
                   <li class="mb-2"><span style="color: #da6972;"> Serum Type (Vitamin B complex) </span> ဖြစ်လို့ ပိုပြီးစိမ့်ဝင်မှု လွယ်တယ်၊ ကုသမှုမြန်တဲ့ဖော်မြူလာ </li>
                 </ul>
-                `
+                `,
+                set: ['anti-aging']
             },
             {
                 id: 15,
                 img: require('@/assets/Products/14.anti-aging/img.png'),
                 ingredients: ['Hyaluronic acid'],
                 name: "Dr.face Anti-Aging Serum",
-                price: "1000 Ks",
+                price: "26500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #f0b5c9 50%, #fdc7d9 40%)",
                 info: `
                 <ul>
@@ -243,14 +257,15 @@ export default createStore({
                   <li class="mb-2">ရှားစောင်းလက်ပတ်ပါဝင်ပါတယ် </li>
                   <li class="mb-2">အသက်ကြီးလာတာနဲ့ အရေပြားကအသစ်ဖြစ်နှုန်းနှေးလာမယ် ၊ခြောက်သွေ့လာမယ် ၊ အတွန့်လေးတွေ ပေါ်လာမယ် ဘာလိမ်းလိမ်းထိရောက်မှု မရှိတော့ဘူးဘာကြောင့်လဲဆိုတော့ အရေပြားရဲ့ဗီတာမင်အေ စုပ်ယူမှု နှေးလာလို့ပါ။ <span style="color: #da6972;"> Dr.face anti-aging serum </span> မှာ <span style="color: #da6972;"> Retinol </span> လို့ခေါ်တဲ့ ဗီတာမင်အေ ဓာတ်ပေါင်းပါဝင်လို့ ဆဲလ်အသစ်အမြန်ဖြစ်ပေါ်စေပြီးအသားအရေတင်းရင်းစေပါတယ်</li>
                 </ul>
-                `
+                `,
+                set: ['anti-aging']
             },
             {
                 id: 16,
                 img: require('@/assets/Products/15.powder/img.png'),
                 ingredients: ['oil'],
                 name: "Dr.face Powder Foundation",
-                price: "1000 Ks",
+                price: "26500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d1d1d3 50%, #eaeaec 40%)",
                 info: `
                 <ul>
@@ -261,14 +276,15 @@ export default createStore({
                   <li class="mb-2">မျက်နှာပေါ်မှ အနာအဆာ နှင့် ချွေးပေါက်များကို ဖုံးကွယ်ပြီး တစ်နေ့တာလုံးလှပစေပါသည် </li>
                   <li class="mb-2"><span style="color: #da6972;">02</span>-ဖြူ ၊ <span style="color: #da6972;">2.5</span>  ဖြူဝါ / <span style="color: #da6972;">03</span> ဝါဝင်းသော ၊ <span style="color: #da6972;">04</span> ညိုညက်သောအသားအရေအလိုက် အရောင် ရွေးချယ်ဝယ်ယူနိုင်ပါသည်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 17,
                 img: require('@/assets/Products/16.water-gel/img.png'),
                 ingredients: [],
                 name: "Dr.face Skin Moisturizer Water Gel",
-                price: "1000 Ks",
+                price: "19900 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #56c0e2 50%, #6ecded 40%)",
                 info: `
                 <ul>
@@ -281,14 +297,15 @@ export default createStore({
                   <li class="mb-2">အရေးအကြောင်းတွေတင်းရင်းမယ်</li>
                   <li class="mb-2">Plumping effect</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 18,
                 img: require('@/assets/Products/17.treatment-toner/img.png'),
                 ingredients: [],
                 name: "Dr.face Treatment Toning Lotion ",
-                price: "1000 Ks",
+                price: "26500 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #c9c8c8 50%, #ecedef 40%)",
                 info: `
                 <ul>
@@ -299,14 +316,15 @@ export default createStore({
                   <li class="mb-2">ဘတ်တီးရီးယားပိုးမွှားများမှ ကာကွယ်ပေးခြင်း</li>
                   <li class="mb-2">အရွယ်တင်နုပျိုစေခြင်း</li>
                 </ul>
-                `
+                `,
+                set: ['whitening', 'anti-aging', 'glow']
             },
             {
                 id: 19,
                 img: require('@/assets/Products/18.remover/img.png'),
                 ingredients: [],
                 name: "Dr.face Tea Tree Make Up Remover Cleansing Wipes ",
-                price: "1000 Ks",
+                price: "7800 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #c79d14 50%, #d7bb5e 40%)",
                 info: `
                 <ul>
@@ -317,14 +335,15 @@ export default createStore({
                   <li class="mb-2">မိတ်ကပ် အဆီနှင့် အညစ်အကြေးများကို ဒီတစ်ပိုင်းတည်းနဲ့ သန့်စင်ပေးနိုင်တယ်</li>
                   <li class="mb-2">မိတ်ကပ်များဖျက်ပြီးချိန်မှာလည်းအသားအရေ ခြောက်သွေ့ခြင်းလုံးဝမရှိတဲ့အပြင် အစိုဓာတ်ကို ဖြည့်တင်းပေးတယ်</li>
                 </ul>
-                `
+                `,
+                set: ['acne']
             },
             {
                 id: 20,
                 img: require('@/assets/Products/19.t-zone/img.png'),
                 ingredients: [],
                 name: "Dr.face Tzone pack ",
-                price: "1000 Ks",
+                price: "1850 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #d29da2 50%, #fbdcde 40%)",
                 info: `
                 <ul>
@@ -337,14 +356,15 @@ export default createStore({
                   <li class="mb-2">မိမိနေ့စဉ်အသုံးပြုနေသော skin care များကို အရေပြားအတွင်းသို့ပုံမှန်ထက် ၁၀ဆ ပိုမိုစိမ့်ဝင်စေနိုင်ခြင်း</li>
                   <li class="mb-2">(မျက်နှာပေါ်တွင် နာရီဝက်ခန့်လိမ်းပြီးခွာပါ ပြီးနောက်မှ ရေနဲ့ဆေးချပေးပါ)</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 21,
                 img: require('@/assets/Products/20.v-mask/img.png'),
                 ingredients: ['PPC', 'Collagen', 'Caffeine', 'Vitamin-C', 'Gingko biloba leaf extract', 'Pumpkin fruit extract'],
                 name: "Dr.face V Shape Mask",
-                price: "1000 Ks",
+                price: "4200 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #b8447a 50%, #d997b6 40%)",
                 info: `
                 <ul>
@@ -355,14 +375,15 @@ export default createStore({
                   <li class="mb-2">အသက်အရွယ်ရလာ၍ကြွက်သားလျော့တိလျော့ရဲဖြစ်နေသူများ</li>
                   <li class="mb-2">မျက်နှာဖောင်းအစ်နေသူများ၊မေး၂ထပ်ဖြစ်နေသူများအတွက် မျက်နှာကိုချပ်ရပ်သွယ်လျစေပါသည်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 22,
                 img: require('@/assets/Products/21.skin-care-mask/img.png'),
                 ingredients: ['CICA Tea Tree Leaf extract', 'Panthenol', 'allantoin', 'Hyaluronic Acid'],
                 name: "Dr.face all in one skin care mask ",
-                price: "1000 Ks",
+                price: "3000 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #6f8750 50%, #a5c876 40%)",
                 info: `
                 <ul>
@@ -370,14 +391,15 @@ export default createStore({
                   <li class="mb-2"> <span style="color: #da6972;"> CICA (Centella asiatica extract) Tea Tree Leaf extract ,Panthenol, allantoin,Hyaluronic Acid </span> တို့ဖြင့် ထုတ်လုပ်ထားသော <span style="color: #da6972;"> Dr.face all in one mask</span> ဖြစ်ပါသည်</li>
                   <li class="mb-2"> ဝက်ခြံ ၊ ချွေးပေါက်ကျယ် ၊ အမဲစက် ၊ အရေးအကြောင်း အားလုံးအတွက် တစ်မျိုးတည်းအသုံးပြုရုံဖြင့် သိသာသောရလဒ်ကို တစ်ကြိမ်တည်းမှာ ချက်ချင်းတွေ့မြင်ခံစားနိုင်ပါသည်</li>
                 </ul>
-                `
+                `,
+                set: []
             },
             {
                 id: 23,
                 img: require('@/assets/Products/22.spot-gel/img.png'),
                 ingredients: ['Salicylic Acid', 'Moisturizer', 'Centella extract', 'Niacinamide'],
                 name: "Dr.face spot clear gel",
-                price: "1000 Ks",
+                price: "14600 Ks",
                 bg: "background-image: -webkit-linear-gradient(65deg, #196892 50%, #7dbee2 40%)",
                 info: `
                 <ul>
@@ -388,10 +410,55 @@ export default createStore({
                   </li>
                   <li class="mb-2">အေးမြအထိအတွေ့နဲ့လမ်းဆန်းသော ရနံ့</li>
                 </ul>
-                `
+                `,
+                set: ['acne']
+            },
+            {
+                id: 24,
+                img: require('@/assets/Products/23.cutton/cotton.png'),
+                ingredients: [],
+                name: "Dr.face Cutton Pad",
+                price: "4550 Ks",
+                bg: "background-image: -webkit-linear-gradient(65deg, #777 50%, #f2f2f2 40%)",
+                info: `
+              <ul>
+                <li class="mb-2">အ​ရေပြား ပြသနာများအတွက် အထူးသီးသန့်​ဖော်မြူလာ ဖွာထွက်ခြင်းမရှိ </li>
+                <li class="mb-2"> အလွန်နူးညံ့​သော <span style="color: #da6972;"> Skin-friendly cotton </span> သဘာဝဝါဂွမ်းဖြင့်ပြုလုပ်ထားသည်cotton pad </li>
+                <li class="mb-2"> တစ်ထုပ်လျှင် ( ၂၂၂ ) ခု တိတိ ပါဝင်ပါသည် </li>
+              </ul>
+              `,
+                set: []
             },
         ],
         product: '',
+
+        skincareSetProducts: [],
+
+        address: [{
+                city: 'ရန်ကုန်',
+                location: [
+                    'Capital Hypermarket',
+                    'Beauty Diary',
+                    'Medicare health and beauty stores',
+                    'Shwe Ohh ဆေးဆိုင်',
+                    'City Care',
+                    'Orange',
+                    'Super One',
+                    'ဂမုန်းပွင့်',
+                    'စိန်ဂေဟာ',
+                    'One Stop Mart',
+                    'Life Plus',
+                    'Clover',
+                    '119 Store '
+                ]
+            },
+            {
+                city: 'မန္တလေး',
+                location: [
+                    'Beauty Diary',
+                ]
+            }
+        ],
     },
     getters: {
         getPageStatus(state) {
@@ -404,17 +471,30 @@ export default createStore({
 
         getProduct(state) {
             return state.product;
+        },
+
+        getAddress(state) {
+            return state.address;
+        },
+
+        getSkincareSetProducts(state) {
+            return state.skincareSetProducts;
         }
     },
     mutations: {
         setPageStatus: (state, status) => state.pageStatus = status,
         setProduct: (state, product) => state.product = product,
+        setSkincareSetProducts: (state, products) => state.skincareSetProducts = products
     },
     actions: {
         getPageStatus: (context, status) => context.commit('setPageStatus', status),
         getProduct: (context, id) => {
             let product = context.state.products.find(product => product.id == id);
             context.commit('setProduct', product);
+        },
+        getSkincareSetProducts: (context, slug) => {
+            let products = context.state.products.filter(product => product.set.includes(slug));
+            context.commit('setSkincareSetProducts', products);
         }
     },
     modules: {}

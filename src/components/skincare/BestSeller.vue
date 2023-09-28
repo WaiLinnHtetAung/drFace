@@ -6,7 +6,7 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-lg-3 col-md-6 ">
+            <div class="col-lg-3 col-md-6 mb-4 ">
                 <div class="photo-card" style="background-image: -webkit-linear-gradient(65deg, #d5a5ad 50%, #e1bbc2 40%)">
                     <img src="@/assets/Products/01.all-in-one/img1.png" alt="">
                     <span>Dr.Face</span>
@@ -14,11 +14,11 @@
                 <div class="card-content text-center">
                     <h4>All in One</h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
-                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
+                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>18500 Ks</p>
                     <router-link to="/product/1" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 ">
+            <div class="col-lg-3 col-md-6 mb-4 ">
                 <div class="photo-card " style="background-image: -webkit-linear-gradient(65deg, #8acc8f 50%, #b2dbb4 40%)">
                     <img src="@/assets/Products/04.acne-back-spray/img.png" alt="">
                     <span>Dr.Face</span>
@@ -26,11 +26,11 @@
                 <div class="card-content text-center">
                     <h4>Dr.Face Body Acne Spray</h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
-                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
+                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>23900 Ks</p>
                     <router-link to="/product/5" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 ">
+            <div class="col-lg-3 col-md-6 mb-4 ">
                 <div class="photo-card" style="background-image: -webkit-linear-gradient(65deg, #fcb476 50%, #ffc18a 40%);">
                     <img src="@/assets/Products/09.pore-toner/img.png" alt="">
                     <span>Dr.Face</span>
@@ -38,11 +38,11 @@
                 <div class="card-content text-center">
                     <h4>Dr.face Pore Minimizer Clarifying  Toner </h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
-                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
+                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>26500 Ks</p>
                     <router-link to="/product/10" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 ">
+            <div class="col-lg-3 col-md-6 mb-4 ">
                 <div class="photo-card" style="background-image: -webkit-linear-gradient(65deg, #f184ac 50%, #f59abb 50%);  ">
                     <img src="@/assets/Products/14.anti-aging/img.png" alt="">
                     <span>Dr.Face</span>
@@ -50,7 +50,7 @@
                 <div class="card-content text-center">
                     <h4>Dr.face Anti-Aging Serum  </h4>
                     <i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i><i class="fa-solid fa-star me-2"></i>
-                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>1000 Ks</p>
+                    <p><i class="fa-solid fa-money-bill-1-wave text-black me-2"></i>26500 Ks</p>
                     <router-link to="/product/15" class="detail-btn">See Detail</router-link>
                 </div>
             </div>
@@ -112,13 +112,16 @@
         margin: 8px 0 20px;
         position: absolute;
         bottom: 28px;
-        left: 35%;
+        left: 0;
+        right: 0;
     }
 
     .detail-btn {
+        width: 100%;
         position: absolute;
         bottom: 0;
-        right: 80px;
+        right: 0;
+        left: 0;
     }
 
     @media (min-width: 1500px) {

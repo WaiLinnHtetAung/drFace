@@ -31,6 +31,30 @@ const routes = [{
         component: () =>
             import ('@/views/skincare/Product.vue'),
         props: true
+    },
+    {
+        path: '/available-shop',
+        name: 'Available Shop',
+        component: () =>
+            import ('@/views/skincare/Shop.vue')
+    },
+    {
+        path: '/set-cateogry',
+        name: 'Skincare Set Category',
+        component: () =>
+            import ('@/views/skincare/SetCategory.vue')
+    },
+    {
+        path: '/set/:slug',
+        name: 'Set',
+        component: () =>
+            import ('@/views/skincare/Set.vue'),
+        props: true
+    },
+    {
+        path: '/comming',
+        component: () =>
+            import ('@/views/Comming.vue')
     }
 
 ]

@@ -12,8 +12,19 @@
                     <div><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></div>
                     <div><i class="fa-brands fa-viber" style="color: #4f0d7b;"></i></div>
                 </div>
+
+                <br>
+                <br>
+                <div class="address">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>office@drface.com.mm</div>
+                </div>
+                <div class="address">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>drface.com.mm</div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-2 col-md-6">
                 <h3>About Us</h3>
                 <div class="links">
                     <router-link to="#">Home</router-link>
@@ -22,27 +33,41 @@
                     <router-link to="#">Available Shops</router-link>
                     <router-link to="#">Videos</router-link>
                 </div>
+                
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-5 col-md-6">
                 <h3>Address</h3>
+                <h3>Office</h3>
                 <div class="address">
                     <i class="fa-solid fa-location-dot"></i>
-                    <div>malikha housing, Yangon, Myanmar</div>
+                    <div>No 18 , Pinlon Yeik Mon housing, Thingangyun Township, Yangon , Myanmar</div>
                 </div>
                 <div class="address">
                     <i class="fa-solid fa-phone"></i>
-                    <div>+95 9 976 326753</div>
+                    <div>+959 976326753</div>
+                </div>
+
+                <h3>Clinic 1</h3>
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>No .1 A 38, Mya Thida Housing , Thingangyun Township, Yangon , Myanmar</div>
                 </div>
                 <div class="address">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>drfaceskincare@gmail.com</div>
+                    <i class="fa-solid fa-phone"></i>
+                    <div>+959 423588673 , +959 421079909</div>
+                </div>
+
+                <h3>Clinic 2</h3>
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>No 43, Bo Sein Man Road , Bahan Township, Yangon, Myanmar</div>
                 </div>
                 <div class="address">
-                    <i class="fa-solid fa-globe"></i>
-                    <div>drface.com.mm</div>
+                    <i class="fa-solid fa-phone"></i>
+                    <div>+959 940408877</div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-2 col-md-6">
                 <div class="photos">
                     <img src="../../assets/Products/01.all-in-one/img1df.jpg" alt="">
                     <img src="../../assets/Products/07.lip-balm/viber_image_2023-06-12_10-52-13-247.jpg" alt="">
@@ -186,5 +211,22 @@ import { ref } from 'vue';
     footer p {
         text-align: center;
         font-size: 12px;
+    }
+
+    @media (max-width:1500px) {
+        .address {
+            display: flex;
+            justify-content: start;
+            gap: 5px;
+            margin-bottom: 13px;
+        }
+        .address i {
+            padding-top: 3px;
+            color: #b58e18;
+        }
+    
+        .address div {
+            font-size: 12px;
+        }
     }
 </style>

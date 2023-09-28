@@ -69,6 +69,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background: rgb(242, 242, 242, .7);
     }
     .product-img img {
         width: 100%;

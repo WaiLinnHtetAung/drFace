@@ -7,22 +7,20 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active ">
-                <img src="@/assets/images/carousel3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h1>WE ARE HERE FOR YOUR SKIN <br>
-                        CARE
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque distinctio eos atque quibusdam repellat vel sed quidem illo perferendis.</p>
-                    <router-link to="/products" class="dr-btn">Shop Now</router-link>
-                </div>
+                <img class="lg-img" src="@/assets/images/carousel/1.png" alt="...">
+                <img class="md-img" src="@/assets/images/carousel/1_1200.jpg" alt="...">
             </div>
-            <div class="carousel-item">
-                <img src="@/assets/images/carouesl1.jpeg" class="d-block w-100" alt="...">
+            
+            <div class="carousel-item  ">
+                <img class="c3-1 lg-img" src="@/assets/images/carousel/2.png" alt="...">
+                <img class="c3-1 md-img" src="@/assets/images/carousel/2_1200.jpg" alt="...">
             </div>
-            <div class="carousel-item">
-                <img src="@/assets/images/carousel2.jpeg" class="d-block w-100" alt="...">
-                
+
+            <div class="carousel-item slide2 ">
+                <img class="lg-img" src="@/assets/images/carousel/3.jpg" alt="...">
+                <img class="md-img" src="@/assets/images/carousel/3_1200.png" alt="...">
             </div>
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,26 +41,13 @@
 
 <style>
     .carousel-item img {
-        height: 550px;
-    }
-    .carousel-caption {
-        width: 450px;
-        left: 780px;
-        bottom: 150px;
-        text-align: start;
-    }
-    .carousel-caption h1 {
-        color: rgb(27, 27, 27);
-        font-weight: bold;
-        text-align: start;
-        font-size: 28px;
-    }
-    .carousel-caption p {
-        text-align: start;
-        font-size: 13px;
-        color: rgb(86, 89, 91);
+        width: 100%;
+        height: 700px;
     }
 
+    .carousel-item .md-img {
+        display: none;
+    }
     .carousel-indicators {
         bottom: 30px;
     }
@@ -74,7 +59,7 @@
     }
 
     .carousel-indicators button.active {
-        background-color: #c8a338 !important;
+        background-color: #21f0e2 !important;
     }
 
     #carouselExampleIndicators > button.carousel-control-next > span.carousel-control-next-icon,
@@ -85,16 +70,25 @@
         background-size: 1.5rem;
     }
 
-    @media (min-width: 1500px) {
+    @media (max-width: 1600px) {
         .carousel-item img {
-            height: auto;
+            width: 100%;
+            height: 600px;
         }
-        .carousel-caption {
-            width: 500px;
-            left: 1100px;
-            bottom: 300px;
-            text-align: start;
+    }
+
+    @media (max-width: 1300px) {
+        .carousel-item img {
+            width: 100%;
+            height: 550px;
+            margin-top: -35px;
         }
 
+        .carousel-item .lg-img {
+            display: none;
+        }
+        .carousel-item .md-img {
+            display: block;
+        }
     }
 </style>

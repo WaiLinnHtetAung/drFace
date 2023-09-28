@@ -64,7 +64,7 @@
     .top-img .text {
         position: absolute;
         bottom: 30%;
-        left: 150px;
+        left: 10%;
         width: 500px;
     }
 
@@ -80,7 +80,7 @@
 
     .product-card {
         position: relative;
-        height: 370px;
+        height: 450px;
     }
 
     .title {
@@ -102,7 +102,7 @@
 
     .product-img {
         width: 100%;
-        height: 140px;
+        height: 180px;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -111,7 +111,7 @@
 
     .products img {
         width: 60%;
-        object-fit: cover;
+        object-fit: contain;
         height: 100%;
     }
 
@@ -173,5 +173,24 @@
         color: #423e3e;
         font-weight: bold;
         font-size: 12px;
+    }
+
+    @media (max-width: 990px) {
+        .product-card {
+            position: relative;
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .top-img .text {
+            width: 300px;
+        }
+        .text h3 {
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+        }
     }
 </style>
