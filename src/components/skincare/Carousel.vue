@@ -12,7 +12,7 @@
             </div>
             
             <div class="carousel-item  ">
-                <img class="c3-1 lg-img" src="@/assets/images/carousel/2.png" alt="...">
+                <img class="c3-1 lg-img" src="@/assets/images/carousel/2.jpg" alt="...">
                 <img class="c3-1 md-img" src="@/assets/images/carousel/2_1200.jpg" alt="...">
             </div>
 
