@@ -51,20 +51,24 @@
 </template>
 
 <script>
-import { computed, onMounted } from 'vue';
+    import { computed, onMounted } from 'vue';
     import { useStore } from 'vuex';
+    import { useRouter } from 'vue-router';
     export default {
         props: ['slug'],
         setup(props) {
             let store = useStore();
+            let router = useRouter();
             store.dispatch('getSkincareSetProducts', props.slug)
             let products = computed(() => store.getters['getSkincareSetProducts'])
+
+            let detail = (id) => router.push(`/product/${id}`)
 
             onMounted(() => {
                 window.scrollTo(0,0)
             })
 
-            return {products}
+            return {products, detail}
         }
     }
 </script>

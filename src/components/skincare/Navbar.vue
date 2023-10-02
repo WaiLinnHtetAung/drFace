@@ -12,7 +12,7 @@
         </div>
     </div>
     <div>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg " :class="{fix : isNavFix}">
             <a class="navbar-brand" href="/drface">
                 <img src="@/assets/images/logo.png " width="110" alt="">
             </a>
@@ -27,7 +27,7 @@
                         <router-link to="/drface" class="nav-link">Home</router-link>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/products" class="nav-link " >
+                        <router-link to="/products" class="nav-link " :class="{active: currentRoute.slice(0,8) == '/product'}">
                             Products 
                         </router-link>
                         <!-- <ul class="dropdown-menu">
@@ -52,18 +52,44 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
     import { useRouter } from 'vue-router';
     export default {
         setup() {
             let router = useRouter();
             let currentRoute = ref('');
+            let isNavFix = ref(false);
+            let prevScrollY = ref(0);
+
+            const handleScroll = () => {
+                const scrollY = window.scrollY;
+
+                const threshold = 100;
+
+                if(scrollY > prevScrollY.value) {
+                    //scroll down
+                    isNavFix.value = false;
+                } else {
+                    //scroll up
+                    if(scrollY > threshold) {
+                        isNavFix.value = true;
+                    } else {
+                        isNavFix.value = false;
+                    }
+                }
+
+                prevScrollY.value = scrollY;
+            }
 
             router.afterEach(to => {
                 currentRoute.value = to.path;
             });
 
-            return {currentRoute}
+            onMounted(() => {
+                window.addEventListener('scroll', handleScroll);
+            })
+
+            return {currentRoute, isNavFix}
         }
     }
 </script>
@@ -89,6 +115,37 @@ import { ref } from 'vue';
         background-color: #fff;
         box-shadow: 5px 3px 3px rgb(194, 190, 190);
         padding: 0 15%;
+    }
+
+    .navbar.fix {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 999999;
+        animation: drop .3s;
+    }
+
+    @keyframes drop {
+        0% {
+            top: -50px;
+        }
+
+        25% {
+            top: -40px;
+        }
+
+        50% {
+            top: -30px;
+        }
+
+        75% {
+            top: -15px;
+        }
+
+        100% {
+            top: 0px;
+        }
     }
 
     .navbar-brand {
