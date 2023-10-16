@@ -156,10 +156,17 @@ export default {};
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
   .carousel-item img {
     width: 100%;
     height: 500px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .carousel-item img {
+    width: 100%;
+    height: 475px;
   }
 }
 
