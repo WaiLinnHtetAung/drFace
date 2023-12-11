@@ -9,11 +9,30 @@
           <h6>Customers' Feedback with Dr.Face Products</h6>
         </div>
       </div>
+      <div class="img-preview-container" v-if="imgview == true">
+        <div class="img-preview">
+          <div
+            class="d-flex justify-content-between align-items-center px-3 py-1 text-white shadow"
+            style="background: #333"
+          >
+            <span>Image Preview</span>
+            <i
+              class="fa-solid fa-xmark fs-3 pointer"
+              @click="imgview = false"
+            ></i>
+          </div>
+          <ReviewImage :img_url="image_url" />
+        </div>
+      </div>
       <div class="col-lg-9">
         <div class="feedback-slider swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"  v-for="(card, index) in cards" :key="index">
-              <div class="card">
+            <div
+              class="swiper-slide"
+              v-for="(card, index) in cards"
+              :key="index"
+            >
+              <div class="card pointer" @click="getImageView(index)">
                 <img :src="card.img" alt="" />
               </div>
             </div>
@@ -26,8 +45,10 @@
 </template>
 
 <script>
+import ReviewImage from "./ReviewImage";
 import { ref, onMounted } from "vue";
 export default {
+  components: { ReviewImage },
   setup() {
     let cards = [
       { img: require("@/assets/images/review/1.jpg") },
@@ -37,6 +58,13 @@ export default {
       { img: require("@/assets/images/review/5.jpg") },
       { img: require("@/assets/images/review/6.jpg") },
     ];
+
+    let imgview = ref(false);
+    let image_url = ref("");
+    const getImageView = (url) => {
+      image_url.value = url;
+      imgview.value = true;
+    };
 
     const swiper = ref(null);
 
@@ -73,7 +101,7 @@ export default {
       });
     });
 
-    return { cards, swiper };
+    return { cards, swiper, imgview, image_url, getImageView };
   },
 };
 </script>
@@ -156,6 +184,25 @@ export default {
   text-align: center;
 }
 
+.img-preview-container {
+  width: 100%;
+  height: 100%;
+  background: rgb(242, 242, 242, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.img-preview {
+  height: 500px;
+  width: 800px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1500px) {
   .card {
     height: 320px;
@@ -167,12 +214,11 @@ export default {
 }
 
 @media (max-width: 1300px) {
-
   .text {
     margin: 40% 0 0 10%;
     padding: 5px 15px;
   }
-  
+
   .text h6 {
     font-size: 24px;
     margin-top: 50px;
@@ -209,7 +255,7 @@ export default {
     margin: 0%;
     padding: 5px 15px;
   }
-  
+
   .text h6 {
     text-align: center;
     font-size: 24px;
@@ -238,7 +284,7 @@ export default {
     margin: 0%;
     padding: 15px 15px 0px;
   }
-  
+
   .card {
     height: 280px;
   }
@@ -249,7 +295,6 @@ export default {
 }
 
 @media (max-width: 650px) {
-
   .swiper-slide {
     display: flex;
     justify-content: center;
@@ -266,7 +311,6 @@ export default {
 }
 
 @media (max-width: 590px) {
-
   .card {
     width: 100%;
     height: 300px;
