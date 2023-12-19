@@ -518,7 +518,7 @@ export default createStore({
       },
       {
         id: 29,
-        img: require("@/assets/Products/BB_Cream_1.jpg"),
+        img: require("@/assets/Products/BB_Cream_1.png"),
         ingredients: [],
         name: "Dr Face Serum BB Cream ",
         price: "-Ks",
@@ -535,7 +535,7 @@ export default createStore({
               </ul>
               `,
         set: [],
-      }
+      },
     ],
     product: "",
 

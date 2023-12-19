@@ -4,7 +4,8 @@
       <h4>Dr.face skin care product</h4>
       <p>
         Dr.face skin care product in Myanmar Since 2011 <br />
-        More than 12 Years experiences.Our Skin Care products are  guaranteed skin care brand and it is made in Korea.
+        More than 12 Years experiences.Our Skin Care products are guaranteed
+        skin care brands and manufactured in Korea.
       </p>
       <router-link to="/products" class="dr-btn"
         >Visit Dr.face Skin Care Products</router-link
