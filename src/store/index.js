@@ -221,7 +221,7 @@ export default createStore({
                   <li class="mb-2">နေလောင်ထားသော အသားအရေကို အေးမြစေသည်</li>
                 </ul>
                 `,
-        set: [],
+        set: ["acne"],
       },
       {
         id: 13,
@@ -320,7 +320,7 @@ export default createStore({
                   <li class="mb-2">Plumping effect</li>
                 </ul>
                 `,
-        set: [],
+        set: ["whitening", "glow"],
       },
       {
         id: 18,
@@ -516,6 +516,26 @@ export default createStore({
                 `,
         set: [],
       },
+      {
+        id: 29,
+        img: require("@/assets/Products/BB_Cream_1.jpg"),
+        ingredients: [],
+        name: "Dr Face Serum BB Cream ",
+        price: "-Ks",
+        bg: "background-image: -webkit-linear-gradient(65deg, #777 50%, #f2f2f2 40%)",
+        info: `
+              <ul>
+                <li class="mb-2">တစ်ဗူးတည်းနဲ့အာနိသင် ၅ မျိုးရရှိစေမယ့် Dr.Face Serum BB Cream </li>
+                <li class="mb-2"> အသားအရေ အမျိုးအစားအားလုံးအတွက် သင့်တော်တယ် </li>
+                <li class="mb-2"> UV ရောင်ခြည်မှ ကာကွယ်ပေးနိုင်ပြီး ၊အရေးအကြောင်းတွေကို လည်းကာကွယ်ပေးနိုင်တယ် 
+                မျက်နှာပေါ်က အနာအဆာ ဝက်ခြံ တွေကို ဖုံးထားပေးနိုင်တယ် 
+                လိမ်းထားပြီးနောက် အစိုဓာတ်ကိုထိန်းပေးထားနိုင်လို့ တစ်နေကုန် ဂလိုး နေစေတယ် 
+                စေးကပ်ခြင်း ပြာနှမ်းခြင်း လုံးဝမရှိ BB cream ဖြစ်လို့ မိတ်ကပ်သားပါးပါးလေးနဲ့ သဘာဝအတိုင်း တစဟ်နေကုန် လှနေစေမှာပါ  </li>
+                <li class="mb-2">အသားဖြူသူအတွက် honey light ၊ အသားညိုသူအတွက် honey beige ဆိုပြီး ၂ရောင်ထုတ်ထားလို့ ကိုယ့်အသားအရေ နဲ့သင့်တော်မယ့် အရောင်ကို စိတ်ကြိုက် ရွေးချယ်လို့ရပါတယ် </li>
+              </ul>
+              `,
+        set: [],
+      }
     ],
     product: "",
 

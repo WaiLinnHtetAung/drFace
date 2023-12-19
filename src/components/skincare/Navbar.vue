@@ -3,7 +3,7 @@
         <div class=" d-flex justify-content-between align-items-center">
             <div class="date">
                 <i class="fa-solid fa-clock me-2"></i>
-                <span>Monday - Saturday, 8AM to 9PM</span>
+                <span>Monday - Saturday, 9AM to 5PM</span>
             </div>
             <div class="contact">
                 <i class="fa-solid fa-phone me-2"></i>
