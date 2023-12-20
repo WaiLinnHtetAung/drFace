@@ -52,9 +52,9 @@ const routes = [{
         props: true
     },
     {
-        path: '/comming',
+        path: '/vlog',
         component: () =>
-            import ('@/views/Comming.vue')
+            import ('@/views/skincare/Vlog.vue')
     }
 
 ]

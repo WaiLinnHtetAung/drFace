@@ -43,7 +43,7 @@
                         <router-link class="nav-link" to="/available-shop">Available Shops</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/comming">Vlog</a>
+                        <a class="nav-link" href="/vlog">Vlog</a>
                     </li>
                 </ul>
             </div>
