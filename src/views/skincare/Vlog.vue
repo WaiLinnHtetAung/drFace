@@ -81,6 +81,12 @@
     text-align: center;
  }
 
+ @media (max-width:500px){
+    .video {
+        margin:20px auto;
+    }
+ }
+
 
 
 
