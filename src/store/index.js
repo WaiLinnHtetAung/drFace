@@ -521,7 +521,7 @@ export default createStore({
         img: require("@/assets/Products/BB_Cream_1.png"),
         ingredients: [],
         name: "Dr Face Serum BB Cream ",
-        price: "-Ks",
+        price: "35500 Ks",
         bg: "background-image: -webkit-linear-gradient(65deg, #777 50%, #f2f2f2 40%)",
         info: `
               <ul>
